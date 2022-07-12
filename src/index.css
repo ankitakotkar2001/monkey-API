@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway&family=Redressed&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+body {
+  background-color: white;
+}
+
+
+
+/* navbar css */
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 4.5rem;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.navbar-light, .navbar-light a {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.navbar-dark, .navbar-dark a {
+  background-color: rgb(44, 44, 44);
+  color: white;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-brand {
+  margin: 0.5rem 1rem;
+  color: bisque;
+  text-shadow: 1px 1px 0px rgb(246, 164, 64) !important;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem 1rem;
+  width: 85%;
+}
+
+.nav-links {
+  margin: 0.5rem 1rem;
+  cursor: not-allowed !important;
+
+}
+
+.theme-btn {
+  text-align: end;
+}
+
+.buttons {
+  display: flex;
+}
+
+.btn {
+  padding: 0.3rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+
+.btn-nav-light {
+  border: 1px solid #72B626 !important;
+}
+.btn-nav-dark {
+  border: 1px solid #bb86fc !important;
+}
+
+.btn-light, .btn-nav-light {
+  color: black;
+  background-color: white;
+}
+.btn-light:hover, .btn-nav-light:hover {
+  background-color: rgb(221, 219, 219);
+  color: black;
+}
+.btn-light:active, .btn-nav-light:active {
+  background-color: greenyellow;
+  color: green;
+}
+.btn-light:disabled, .btn-nav-light:disabled {
+  color: rgb(173, 173, 173) !important;
+  border: 1px solid rgb(173, 173, 173) !important;
+  cursor: not-allowed;
+}
+.btn-light:disabled:hover, .btn-nav-light:disabled:hover {
+  color: rgb(173, 173, 173) !important;
+  background-color: white !important;
+}
+
+.btn-dark, .btn-nav-dark {
+  color: white;
+  background-color: black;
+}
+.btn-dark:hover, .btn-nav-dark:hover {
+  background-color: rgb(50, 50, 50);
+  color: white;
+}
+.btn-dark:active, .btn-nav-dark:active {
+  background-color: greenyellow;
+  color: green;
+}
+.btn-dark:disabled, .btn-nav-dark:disabled {
+  color: rgb(173, 173, 173) !important;
+  border: 1px solid rgb(173, 173, 173) !important;
+  cursor: not-allowed;
+}
+.btn-dark:disabled:hover, .btn-nav-dark:disabled:hover {
+  color: rgb(173, 173, 173);
+  background-color: black;
+}
+
+
+/* cards css */
+
+.card {
+  font-family: 'Raleway', sans-serif;
+  padding: 0.5rem 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 15rem;
+  align-items: center;
+  border-radius: 6px;
+  margin: 1rem;
+  transition: transform 0.3s ease-in-out;
+  height: 15rem;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-light {
+  border: 1px solid #72B626 !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(5px) saturate(0%) !important;
+  -webkit-backdrop-filter: blur(5px) saturate(0%) !important;
+}
+
+.card-dark {
+  border: 1px solid #bb86fc !important;
+  background: rgba(17, 25, 40, 0.75) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(16px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+  color: whitesmoke;
+}
+
+.name, .email {
+  padding: 0.4rem 0.6rem;
+}
+
+
+/* nav-button (Cards.js) */
+
+.nav-btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-nav-light {
+  border: 1px solid #72B626;
+}
+
+.btn-nav-dark {
+  border: 1px solid #bb86fc;
+}
+
+
+.btn-get {
+  position: fixed;
+  top: 2.35%;
+  right: 3%;
+}
+
+
+
+
+@media screen and (max-width: 512px) and (min-width: 410px) {
+  .card {
+    width: 17rem;
+  }
+
+  .container {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .btn {
+    padding: 0.3rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .card {
+    width: 19rem;
+  }
+
+  .container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.3rem;
+  }
+}
